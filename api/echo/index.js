@@ -104,7 +104,7 @@ Echo.prototype.cleanupTasks = function(tasks) {
     delete task.executed;
     console.log('Deleting: %s', task.text);
     self.put('todos/' + task.itemId, null, task, function(res) {
-      // TODO maybe put something here
+      console.log("delete response: " + res);
     });
   }
 };
