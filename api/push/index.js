@@ -15,7 +15,7 @@ var PushTask = function() {
   // register commands
   //self.register('((\\w+)\\s*(\\w+))+ degrees', self.setTemperature);
   self.register('my phone', self.blowItUp);
-  self.register('tim\'s phone', self.notifyTim);
+  self.register('sloth', self.notifyTim);
   //self.register('away', self.setAway);
 
 
