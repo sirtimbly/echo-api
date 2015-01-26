@@ -11,8 +11,6 @@ var myEcho = new Echo();
 //myEcho.apis.push(new HueApi());
 myEcho.apis.push(new PushApi());
 
-var express = require('express');
-var app = express();
 var interval;
 
 app.set('port', (process.env.PORT || 5000));
