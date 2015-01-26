@@ -63,17 +63,19 @@ the app is really just two steps:
 1. Run `npm install` to install required packages.
 1. Run `node app` to run the app.
 
-## Todo
+## Deploy to Heroku
 
-- actual Amazon login (rather than this cookie hack)
-- better credential management overall
-- look for a better way of converting "seventy three" to 73
-- automatic creation of usernames for Hue (should be trivial, but it
-  would be good to add it)
-- "global" commands (that don't require a prefix)
-- maybe get rid of the whole prefix idea altogether
-- "scenes" (tasks that can call subtasks; i.e., set the lights *and*
-  temperature)
+```
+heroku apps:create
+git push heroku
+heroku ps:scale web=1
+```
+
+Then visit in a web browser once by running `heroku open`, this will start the listener.
+
+
+
+
 
 
 [wolfram]: https://developer.wolframalpha.com/portal/apisignup.html
