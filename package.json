@@ -2,7 +2,7 @@
   "name": "amazon-echo-api",
   "version": "0.0.1",
   "description": "Sort of an API for Amazon Echo (via Todos).",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +21,7 @@
     "request": "^2.51.0",
     "unofficial-nest-api": "^0.1.4",
     "wolfram-alpha": "^0.1.1",
-    "pushbullet": "*"
+    "pushbullet": "*",
+    "express": "~4.9.x"
   }
 }
